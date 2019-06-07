@@ -1,4 +1,4 @@
-# React HitHub user search project
+# React GitHub user search project
 > Based on https://www.udemy.com/modern-react-front-to-back/
 
 Live Demo: https://githubuserssearch.netlify.com/
