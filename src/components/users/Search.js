@@ -8,6 +8,10 @@ const Search = () => {
 
   const [text, setText] = useState('');
 
+  /**
+   * Submits form, searches users by text
+   * @param {object} e
+   */
   const onSubmit = (e) => {
     e.preventDefault();
     if (text === '') {
@@ -18,6 +22,10 @@ const Search = () => {
     }
   };
 
+  /**
+   * Handles input changes
+   * @param {object} e
+   */
   const onChange = (e) => setText(e.target.value);
 
   return (

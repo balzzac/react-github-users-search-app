@@ -31,7 +31,10 @@ const GithubState = (props) => {
 
   const [state, dispatch] = useReducer(GithubReducer, initialState);
 
-  // Search Users
+  /**
+   * Searches github users
+   * @param {string} text
+   */
   const searchUsers = async (text) => {
     setLoading();
 
@@ -45,7 +48,10 @@ const GithubState = (props) => {
     });
   };
 
-  // Get User
+  /**
+   * Gets info about user
+   * @param {string} username
+   */
   const getUser = async (username) => {
     setLoading();
 
@@ -59,7 +65,10 @@ const GithubState = (props) => {
     });
   };
 
-  // Get Repos
+  /**
+   * Gets user's repos
+   * @param {string} username
+   */
   const getUserRepos = async (username) => {
     setLoading();
 
@@ -73,10 +82,14 @@ const GithubState = (props) => {
     });
   };
 
-  // Clear Users
+  /**
+   * Clears search
+   */
   const clearUsers = () => dispatch({ type: CLEAR_USERS });
 
-  // Set Loading
+  /**
+   * Sets loading
+   */
   const setLoading = () => dispatch({ type: SET_LOADING });
 
   return (
